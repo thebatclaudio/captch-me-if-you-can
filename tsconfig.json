@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ES2018",
+		"module": "commonjs",
+		"outDir": "./dist",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		/**  ESM syntax is not allowed in a CommonJS module when 'verbatimModuleSyntax' is enabled. */
+		"verbatimModuleSyntax": false
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
+}

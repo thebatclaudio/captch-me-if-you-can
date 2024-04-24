@@ -1,0 +1,38 @@
+{
+	"name": "captch-me-if-you-can",
+	"version": "1.0.0",
+	"description": "A simple captcha service powered by Fastify + TypeORM + TypeScript",
+	"main": "dist/index.js",
+	"scripts": {
+		"start": "node dist/index.js",
+		"dev": "nodemon --exec ts-node src/index.ts",
+		"build": "tsc",
+		"test": "tap test/**.test.js",
+		"typeorm": "typeorm-ts-node-commonjs",
+		"prettify": "prettier --write ."
+	},
+	"keywords": [
+		"captcha",
+		"fastify",
+		"typeorm",
+		"typescript",
+		"nodejs"
+	],
+	"author": "Claudio La Barbera",
+	"license": "MIT",
+	"dependencies": {
+		"canvas": "^2.11.2",
+		"fastify": "^4.26.2",
+		"reflect-metadata": "^0.2.2",
+		"sqlite3": "^5.1.7",
+		"typeorm": "^0.3.20"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.7",
+		"nodemon": "^3.1.0",
+		"prettier": "^3.2.5",
+		"tap": "^18.7.2",
+		"ts-node": "^10.9.2",
+		"typeorm-fastify-plugin": "^1.0.5"
+	}
+}
